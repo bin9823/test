@@ -448,23 +448,34 @@ margin: 0 auto;
         
       }
 
+      .all-bg {
+        padding: 70px 0;
 
+      }
+
+
+
+
+
+      .main-title-txt {
+        top: -50px;
+    }
+    .main-sub-txt {
+      bottom: 0;
+  }
 
       .all-bg h2 {
         font-size: 35px;
         line-height: 35px;
-        color: #333;
+
       }
       
       
       
-      
       .all-bg h3{
-      padding-top: 50px;
-      color: #AB392F;
+      padding-top: 30px;
       font-size: 20px;
-      
-      
+    
       }
 
     
