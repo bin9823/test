@@ -1,11 +1,17 @@
 
+body {
+  font-family: 'Pretendard' !important;
+}
+
+
+
 /* quick-link */
 
 .quick-link {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  max-width: 1280px;
+  max-width: 1320px;
   margin: 0 auto;
   border-bottom: 2px solid #AB392F;
   padding-bottom: 30px;
@@ -24,6 +30,12 @@
   width: 100%;
   border-top: 2px solid #AB392F;
   position: relative;
+  font-weight: 800;
+
+
+}
+.bookmark a{
+  color: #666666;
 }
 
 .star {
@@ -42,7 +54,7 @@ position: absolute;
     transition: background 0.3s;
     color: #000;
     font-size: 14px;
-    text-decoration: none;
+  
     white-space: nowrap;
 }
 
@@ -50,6 +62,7 @@ position: absolute;
     background: url("../img/star-red.png") no-repeat center left;
     background-size: 20px 20px;
     color: #AB392F;
+   
 }
 a.quick-item {
     display: flex;
@@ -113,34 +126,34 @@ span.image.food:hover {
 
 
 
-.all-bg{
-
+.all-bg {
   padding: 73px 0;
   position: relative;
-
   display: block;
   clear: both;
- text-align: center;
- width: 100%;
- background-color: #F3F3F3;
- overflow: hidden; /* 자식 요소의 넘치는 부분 숨김 */
+  text-align: center;
+  width: 100%;
+  background-color: #F3F3F3;
+  overflow: hidden;
   margin: 0 auto;
 }
-.main-title-txt{
+
+.main-title-txt {
   position: relative;
   top: -22px;
 
 }
+
 .all-bg::after {
   content: '';
   position: absolute;
   bottom: 35%;
-  left: 0; /* 왼쪽 기준으로 위치 설정 */
-  width: 200%; /* 애니메이션 이동 범위를 위해 너비를 200%로 설정 */
+  left: 0;
+  width: 200%;
   height: 81px;
-  background: url(../img/bg.png) repeat-x; /* x축 반복으로 배경 흐름 구현 */
-  background-size: contain; /* 이미지 크기를 고정하여 비율 유지 */
-  animation: slide-bg 13s linear infinite; /* 애니메이션 적용 */
+  background: url(../img/bg.png) repeat-x;
+  background-size: contain;
+  animation: slide-bg 13s linear infinite;
   z-index: 3;
 
 }
@@ -149,8 +162,10 @@ span.image.food:hover {
   0% {
     transform: translateX(0);
   }
+
   100% {
-    transform: translateX(-50%); /* 50%만큼 왼쪽으로 이동 */
+    transform: translateX(-50%);
+
   }
 }
 
@@ -185,7 +200,7 @@ font-size: 30px;
 
 .food-txts .inner{
 margin: 0 auto;
- max-width: 1280px; 
+ max-width: 1320px; 
 }
 .food-txt{
 
@@ -198,7 +213,7 @@ margin: 0 auto;
 .food-txt-right a{  
   position: relative;
   padding-left: 15px; 
-  text-decoration: none;
+
   color: #333;
   
 }
@@ -223,15 +238,9 @@ margin: 0 auto;
 /* 카드 */
 
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
   
   .food-container {
-    max-width: 1280px; 
+    max-width: 1320px; 
     margin: 0 auto; 
     margin-top: 30px;
     display: flex;
@@ -280,79 +289,86 @@ body {
   }
 
 
-/*푸터 */
-
-.footer{
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  bottom:0px;
-}
-.container-fluid{
-  margin-left: 300px;
-  margin-right: 300px;
-}
-.footer-left {
-  text-align: left;
-  padding-top:20px;
-  flex: 1;
-}
-.footer-right{
-  text-align: right;
-  justify-content: flex-start;
-}
-footer{
-  color: white;
-  justify-content: flex-end;
-  padding-top:20px;
-}
-.share-button{
-  margin-bottom: 15px;
-  margin-right: 15px;
-  font-size: 30px;
-}
-.content{
-  margin: 0 auto;
-  padding: 10px 300px;
-  position: relative;
-  background: rgba(120, 41, 34, 0.81);
-  width: 100%;
-}
-.second-content{
-  margin: 0 auto;
-  padding: 10px 300px;
-  position: relative;
-  background: #AB392F;
-  width: 100%;  
-  display: relative;
-  justify-content: space-between;
-  justify-content: space-between;
-  flex-wrap: wrap; 
-  text-align: center;
-}
-.foot-first-line{
-  position: relative;
-  margin: 0 0;
-  width: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  display: inline-block;
-  white-space: normal; 
-  text-align: center;
-  word-wrap: break-word;
-}
+/* 푸터 시작 */
 
 
+    .footer-container-fluid {
+      padding: 0 150px;
+      /* 위아래, 좌우 */
+  
+    }
+
+  .footer-left {
+    text-align: left;
+    padding-top:20px;
+    flex: 1;
+  }
+
+
+  .footer-right{
+    text-align: right;
+    justify-content: flex-start;
+  }
+
+
+  footer{
+    color: white;
+    justify-content: flex-end;
+    padding-top:20px;
+  }
+  .share-button{
+    margin-bottom: 15px;
+    margin-right: 15px;
+    font-size: 30px;
+  }
+  
+  .content{
+    margin: 0 auto;
+    position: relative;
+    background: rgba(120, 41, 34, 0.81);
+    width: 100%;
+    padding: 0 150px;
+    /* 위아래, 좌우 */
+    
+  }
+  .second-content{
+    margin: 0 auto;
+    position: relative;
+    background: #AB392F;
+    width: 100%;  
+    display: relative;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    text-align: center;
+  }
+  .foot-first-line{
+    position: relative;
+    margin: 0 0;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    color: white;
+  
+    font-weight: 700;
+    display: inline-block;
+    white-space: normal; 
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
 
 
 
 
-/* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
 
+
+
+
+/* ★★★★★★★★★★★★★★★★★★★★★
+★★★★★★★★★★★★★★★★★★★★★★★
+★★★★★★★★★★★★★★★★★★★ */
+/* 태블릿 */
 /* 화면이 720px 이하일 때 - 한 줄에 3개 */
 @media (max-width: 720px) {
 
@@ -369,35 +385,21 @@ footer{
 
     .food-txts .inner{
       margin: 0 auto;
-       max-width: calc(1280px - 20px); 
+       max-width: calc(1320px - 20px); 
       }
     
+/* 전체 한,중,일,디 아이콘 */
+    span.image.all {
+      width: 70px;
+      height: 70px;
+    }
 
-span.image.all {
-  width: 70px;
-  height: 70px;
-}
+    span.image.food {
+      width: 70px;
+      height: 70px;
+    }
 
-
-
-span.image.food {
-  width: 70px;
-  height: 70px;
-}
-
-
-
-.quick-item>h4 {
-    margin-top: 11px;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: #6a6a6a;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    font-weight: 600;
-}
-
+/*  */
 
     .card {
       width: calc(33.333% - 20px); 
@@ -417,6 +419,7 @@ span.image.food {
 .quick-link {
   max-width: calc(100% - 20px);
 
+
   
 } */
  .star{
@@ -427,10 +430,6 @@ span.image.food {
   /* 화면이 540px 이하일 때 - 한 줄에 2개 */
   @media (max-width: 540px) {
 
-    .quick-wrap {
-
-        
-    }
 
     .card {
         width: calc(50% - 20px);
@@ -449,43 +448,77 @@ span.image.food {
         
       }
 
-      a.quick-item {
 
-        
-    }
+
+      .all-bg h2 {
+        font-size: 35px;
+        line-height: 35px;
+        color: #333;
+      }
+      
+      
+      
+      
+      .all-bg h3{
+      padding-top: 50px;
+      color: #AB392F;
+      font-size: 20px;
+      
+      
+      }
+
     
   }
 
 
 
-  /* 푸터부분 우선 주석처리 토요일 수정 */
-  /* @media screen and (max-width: 48rem){
-    .footer-left .footer-right{
-      text-align: center;
-    }
-  }
-  @media screen and (max-width: 48rem){
+
+
+
+
+
+
+  /* 푸터 */
+  @media screen and (max-width: 48rem) {
+    .footer-left {
+      text-align: left;
+      }
+    
+      .footer-right {
+        text-align: right;
+      }
     .second-content {
-      flex-direction: column; 
-      
+        flex-direction: column;
+        gap: 15px; /* 요소 간 간격 추가 */
     }
-  }
-  @media screen and (max-width: 48rem) {
     .footer {
-      flex-direction: column; 
-      align-items: center; 
+        flex-direction: column;
+        align-items: center;
+        
     }
-  }
-  @media screen and (max-width: 48rem) {
-    .container-fluid {
-      padding-left: 15px; 
-      padding-right: 15px;
+    .footer-container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
     }
-  }
-  @media screen and (max-width: 48rem) {
+    .share-button {
+        font-size: 24px; /* 아이콘 크기 줄이기 */
+        margin-right: 10px; /* 간격 조정 */
+    }
     .text-center {
-      font-size: 1.2rem;
-      padding: 5px; 
-      line-height: 1.8;
+        font-size: 1.2rem;
+        padding: 5px;
+        line-height: 1.8;
     }
-  }  */
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        padding: 20px;
+    }
+    .footer-right{
+      text-align: right;
+    }
+    .text-center {
+        font-size: 1.4rem;
+    }
+}

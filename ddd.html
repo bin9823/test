@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>main 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f86b75229c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="style.css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/tap,crad,check.js"></script>
+
+
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body, html {
+    border: none;
+    overflow-x: hidden;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+
+.main1-container {
+    position: relative;
+    width: 100%;
+    min-width: 1300px;
+    height: 172px;
+    box-sizing: border-box;
+    z-index: 13;
+    background: linear-gradient(to right,  #AB392F, rgba(120, 41, 34, 0.99));
+}
+
+.main1-first-line {
+    width: 1280px;
+    height: 105px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main1-logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 240px;
+    height: 66px;
+    margin-left: 0px;
+    margin-top: -33px;
+    background: url(./main1-asset/noonakitchen-logo-bage.png) no-repeat center center;
+    background-size: auto 66px;
+}
+
+.frm-nav-search  {
+    font-size: 22px;
+    padding-top: 10px;
+    padding-left: 13px;
+    width: 578px;
+}
+
+.frm-nav-search i{
+    cursor: pointer;
+}
+
+.main1-input-area {
+    width: 578px;
+    position: relative;
+    margin-top: -6px;
+}
+
+.main1-input-area2 {
+    width: 578px;
+    height: 50px;
+    padding-left: 9px;
+    margin-top: 12px;
+    text-align: left;
+    vertical-align: top;
+    background: none;
+    border-bottom: 2px solid #FBFFDA;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.main1-search-icon {
+    position: relative;
+    left: 540px;
+    bottom: 43px;
+    margin-right: 32px;
+    color: #FBFFDA;
+}
+
+nav input::placeholder {
+    color: #FBFFDA;
+    font-size: 22px;
+    font-family: "Pretendard";
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #454545;
+    width: 135px;
+}
+
+.icon-box {
+    width: 34px;
+    height: 34px;
+    background-color: #AB392F;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box:hover {
+    background-color: #ca463a;
+}
+
+.icon-box2 {
+    width: 18px;
+    height: 18px;
+    background-color: #AB392F;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-second-line-son{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    float: left;
+    min-width: 220px;
+    font-size: 14px;
+    list-style: none;
+    -webkit-box-shadow: 0 0px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, .175);
+}
+
+.main1-category-area1 {
+    width: 80px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.main1-category-area2 {
+    border-left: 1px solid #454545;
+    width: 140px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 33px;
+}
+
+.main1-category-area3 {
+    padding-left: 42px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    color: #454545;
+}
+
+nav a:hover{
+    color: #AB392F;
+}
+
+.nav-link.active:hover{
+    color: #AB392F;
+}
+
+.nav-link:hover {
+    color: #AB392F;
+}
+
+.bg-body-tertiary {
+    background-color: rgb(255 255 255) !important;
+}
+
+.main1-second-line-btn {
+    height: 38px;
+    border-radius: 17;
+    border: rgba(120, 41, 34, 0.91);
+    background: rgba(120, 41, 34, 0.91);
+    font-weight: 600;
+    --bs-btn-active-bg:  #9e342a;
+    --bs-btn-active-border-color:  #9e342a;
+}
+
+.main1-second-line-btn:hover {
+    background: #AB392F;
+}
+
+.btn-mom {
+    width: 1100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main1-carousel {
+    height: 725px;
+    display: flex;
+    align-items: center;
+}
+
+.main1-carousel-btn {
+    position: relative;
+    bottom: 10px;
+}
+
+.main1-container2 {
+    border: 1px solid rgb(255, 0, 64);
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 88%;
+    left: 65%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.main1-carousel-bg {
+    position: absolute;
+    top: 270px;
+    left: 50px;
+    width: 1000px;
+    height: 540px;
+    margin-left: 0px;
+    margin-top: -33px;
+}
+
+.main1-body {
+    position: relative;
+    top: -45px;
+    width: 100%;
+    height: 518px;
+    background: white;
+    border: 1px solid green;
+}
+
+@media screen and (max-width:475px) {
+    .frm-nav-search  {
+        width: 10px;
+    }
+    
+    .main1-input-area {
+        width: 10px;
+        position: relative;
+    }
+    
+    .main1-input-area2 {
+        position: absolute;
+        right: 70px;
+        top: 80px;
+    }
+    
+    .main1-search-icon {
+        position: relative;
+        left: 0px;
+        bottom: 43px;
+        color: #FBFFDA;
+    }
+    
+    nav input::placeholder {
+        display:none;
+    }
+
+    .navbar {
+        --bs-navbar-brand-color: none;
+        --bs-navbar-brand-hover-color: none;
+    }
+
+    .nav-second-line-son{
+        position: fixed;
+        margin: 30px;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        width: 50px;
+    }
+
+    .dis-none {
+        display: none;
+    }
+
+    .navbar,.navbar-expand-lg ,.bg-body-tertiary {
+        display: none;
+    }
+}
+   </style>
+  </head>
+  <body>
+    <nav class="main1-container">
+      <div class="main1-first-line">
+        <h1>
+          <a href="#" class="main1-logo"></a>
+        </h1>
+        <div class="container-fluid main1-input-area">
+        
+        
+            <form class="frm-nav-search" id="searchForm" action="/search" method="GET">
+                <input class="main1-input-area2" type="text" name="query" style="color:  #FBFFDA;" maxlength="26"
+                    placeholder="NOONAA KITCHEN의 비밀 레시피 검색하기 (예:샌드위치)">
+        
+                <i class="fa-solid fa-magnifying-glass main1-search-icon">
+        
+                </i>
+            </form>
+        </div>
+      </div>
+
+      <div class="main1-second-line">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <div class="navbar-nav container">
+                <div class="row">
+                <div class="main1-category-space">
+                  <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-second-line-son" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-bars icon-box" style="color: white;"></i>
+                      카테고리
+                    </a>
+                    <div class="dropdown-menu mega-dropdown-menu row">
+                      <div class="main1-category-area1">
+                          <div><a href="#">종류</a></div>
+
+                          <div><a href="#">재료</a></div>
+                        
+                          <div><a href="#">방법</a></div>
+                        
+                          <div><a href="#">테마</a></div>
+                        
+                          <div><a href="#">기념일</a></div>
+                        
+                          <div><a href="#">도구</a></div>
+                      </div>
+                      <div class="main1-category-area2">
+                          <div><a href="#">#분식</a></div>
+                          <div><a href="#">#브런치</a></div>
+                          <div><a href="#">#집밥</a></div>
+                          <div><a href="#">#치즈듬뿍</a></div>
+                          <div><a href="#">#캠핑</a></div>
+                          <div><a href="#">#간단 꿀조합</a></div>
+                      </div>
+                      <div class="main1-category-area3">
+                        <i class="fa-solid fa-plus icon-box2" style="color: #FBFFDA;"></i>
+                        <a href="#" style="padding-bottom: 3px;"><i></i>카테고리 전체보기</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="nav-item nav-second-line-son">
+                  <a class="nav-link active" aria-current="page" href="#">즐겨찾기</a>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end btn-mom">
+                  <button class="btn btn-primary me-md-2 main1-second-line-btn" type="button">로그인</button>
+                  <button class="btn btn-primary main1-second-line-btn" type="button">회원가입</button>
+                </div>
+            </div>
+          </div>
+        </nav>
+    
+      </div>
+    </nav>
+
+
+    <div class="wrap">
+        <div class="quick-link">
+          <div class="quick-wrap">
+            <a href="index.html" class="quick-item" data-category="all" id="categorySelect">
+              <span class="image all"></span>
+              <h4>전체</h4>
+            </a>
+            <a href="kindex.html" class="quick-item" data-category="korean">
+              <span class="image food"></span>
+              <h4>한식</h4>
+            </a>
+            <a href="cindex.html" class="quick-item" data-category="chinese">
+              <span class="image food"></span>
+              <h4>중식</h4>
+            </a>
+            <a href="jindex.html" class="quick-item" data-category="japanese">
+              <span class="image food"></span>
+              <h4>일식</h4>
+            </a>
+            <a href="dindex.html" class="quick-item" data-category="dessert">
+              <span class="image food"></span>
+              <h4>디저트</h4>
+            </a>
+          </div><!--quick-wrap-->
+          <div class="bookmark">
+            <a href="bookmark.html" class="star">즐겨찾기 레시피</a>
+          </div>
+        </div><!--quick-link-->
+  
+  
+        <!-- bg -->
+  
+        <div class="all-bg">
+          <div class="main-title-txt">
+            <h2>전체메뉴</h2>
+          </div>
+          <div class="main-sub-txt">
+            <h3>누나키친이 제안하는 맛있고 건강한 요리</h3>
+          </div>
+        </div><!--all-bg-->
+  
+  
+  
+  
+  
+  
+  
+        <div class="food-txts ">
+          <div class="food-txt inner">
+            <div class="food-txt-left">
+              <span>검색결과 </span>
+            </div>
+            <div class="food-txt-right">
+              <a href="#" class="active " data-sort="latest">최신순</a>
+              <a href="#" data-sort="views">조회순</a>
+            </div>
+      
+          </div>
+      
+        </div>
+      
+      
+        <div class="food-container">
+          <!-- 개별 카드 -->
+      
+      
+          <!-- 한식 -->
+          <a class="card" href="#" data-category="korean" data-latest="2" data-views="1000">
+            <img src="img/koreafood-1.jpg" alt="봄 된장 비빔밥" class="card-image">
+            <div class="card-text">
+              <h3>봄 된장 비빔밥</h3>
+              <p>#한식 #집밥 #비빔밥 #봄나물</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="korean" data-latest="1" data-views="300">
+            <img src="img/koreafood-2.jpg" alt="참나물 퀘사디아" class="card-image">
+            <div class="card-text">
+              <h3>참나물 퀘사디아</h3>
+              <p>#한식 #참나물 #퀘사디아</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="korean" data-latest="3" data-views="150">
+            <img src="img/kereafood-3.jpg" alt="흑임자 다식" class="card-image">
+            <div class="card-text">
+              <h3>흑임자 다식</h3>
+              <p>#한식 #명절 </p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="korean" data-latest="2" data-views="250">
+            <img src="img/kereafood-4.jpg" alt="호두마늘볶음" class="card-image">
+            <div class="card-text">
+              <h3>호두마늘볶음</h3>
+              <p>#한식 #밑반찬 #단짠단짠</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="korean" data-latest="2" data-views="240">
+            <img src="img/kereafood-5.jpg" alt="북어채 무침" class="card-image">
+            <div class="card-text">
+              <h3>북어채 무침</h3>
+              <p>#한식 #매실청 #밑반찬</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="korean" data-latest="2" data-views="230">
+            <img src="img/kereafood-6.jpg" alt="카레해물부침개" class="card-image">
+            <div class="card-text">
+              <h3>카레해물부침개</h3>
+              <p>#한식 #부침개 #비오는 날</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="korean" data-latest="2" data-views="250">
+            <img src="img/kereafood-7.jpg" alt="차돌박이 된장찌개" class="card-image">
+            <div class="card-text">
+              <h3>차돌박이 된장찌개</h3>
+              <p>#한식 #집밥 #국물요리</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="korean" data-latest="2" data-views="270">
+            <img src="img/kereafood-8.jpg" alt="짜장찜닭" class="card-image">
+            <div class="card-text">
+              <h3>짜장찜닭</h3>
+              <p>#한식 #닭고기 #짜장소스</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="korean" data-latest="2" data-views="240">
+            <img src="img/kereafood-9.jpg" alt="쭈꾸미삼겹살볶음" class="card-image">
+            <div class="card-text">
+              <h3>쭈꾸미삼겹살볶음</h3>
+              <p>#한식 #만능소스 #주꾸미</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="korean" data-latest="2" data-views="255">
+            <img src="img/kereafood-10.jpg" alt="육개장 칼국수" class="card-image">
+            <div class="card-text">
+              <h3>육개장 칼국수</h3>
+              <p>#한식 #집밥 #국물요리</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="korean" data-latest="2" data-views="90">
+            <img src="img/kereafood-11.jpg" alt="유자 연근조림" class="card-image">
+            <div class="card-text">
+              <h3>유자 연근조림</h3>
+              <p>#한식 #초간단요리 #유자소스</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="korean" data-latest="2" data-views="200">
+            <img src="img/kereafood-12.jpg" alt="옥수수전" class="card-image">
+            <div class="card-text">
+              <h3>옥수수전</h3>
+              <p>#한식 #부침개 #연유</p>
+            </div>
+          </a>
+      
+      
+          <!--중식 -->
+      
+      
+      
+          <a class="card" href="#" data-category="chinese" data-latest="2" data-views="1000">
+            <img src="img/chinafood-1.jpg" alt="사골 마라탕" class="card-image">
+            <div class="card-text">
+              <h3>사골 마라탕</h3>
+              <p>#중식 #마라 #훠궈</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="chinese" data-latest="2" data-views="50">
+            <img src="img/chinafood-2.jpg" alt="히야시츄카" class="card-image">
+            <div class="card-text">
+              <h3>히야시츄카</h3>
+              <p>#중식 #냉면 #여름</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="chinese" data-latest="2" data-views="200">
+            <img src="img/chinafood-3.jpg" alt="마파가지덮밥" class="card-image">
+            <div class="card-text">
+              <h3>마파가지덮밥</h3>
+              <p>#중식 #마파두부 #가지</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="chinese" data-latest="2" data-views="20">
+            <img src="img/chinafood-4.jpg" alt="크림새우" class="card-image">
+            <div class="card-text">
+              <h3>크림새우</h3>
+              <p>#중식 #맥주안주 #크림</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="chinese" data-latest="2" data-views="240">
+            <img src="img/chinafood-5.jpg" alt="유산슬 라면" class="card-image">
+            <div class="card-text">
+              <h3>유산슬 라면</h3>
+              <p>#중식 #라면</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="chinese" data-latest="2" data-views="270">
+            <img src="img/chinafood-6.jpg" alt="사천짜장떡볶이" class="card-image">
+            <div class="card-text">
+              <h3>사천짜장떡볶이</h3>
+              <p>#중식 #떡볶이 #짜장소스</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="chinese" data-latest="2" data-views="230">
+            <img src="img/chinafood-7.jpg" alt="깐풍만두" class="card-image">
+            <div class="card-text">
+              <h3>깐풍만두</h3>
+              <p>#중식 #고추핫기름 #매콤달콤</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="chinese" data-latest="2" data-views="257">
+            <img src="img/chinafood-8.jpg" alt="고추잡채" class="card-image">
+            <div class="card-text">
+              <h3>고추잡채</h3>
+              <p>#중식 #찹채 #고추</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="chinese" data-latest="2" data-views="290">
+            <img src="img/chinafood-9.jpg" alt="당면 콩나물무침" class="card-image">
+            <div class="card-text">
+              <h3>당면 콩나물무침</h3>
+              <p>#중식 #냉채 #콩나물</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="chinese" data-latest="2" data-views="30">
+            <img src="img/chinafood-10.jpg" alt="유린만두" class="card-image">
+            <div class="card-text">
+              <h3>유린만두</h3>
+              <p>#중식 #매콤새콤</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="chinese" data-latest="2" data-views="150">
+            <img src="img/chinafood-11.jpg" alt="차돌박이 깻잎 냉채" class="card-image">
+            <div class="card-text">
+              <h3>차돌박이 깻잎 냉채</h3>
+              <p>#중식 #깻잎 #여름</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="chinese" data-latest="2" data-views="270">
+            <img src="img/chinafood-12.jpg" alt="된장소스를 곁들인 토란 어만두" class="card-image">
+            <div class="card-text">
+              <h3>된장소스를 곁들인 토란 어만두</h3>
+              <p>#중식 #만두 #초간단요리</p>
+            </div>
+          </a>
+      
+      
+      
+          <!-- 일식 -->
+          <a class="card" href="#" data-category="japanese" data-latest="2" data-views="1000">
+            <img src="img/japanfood-1.jpg" alt="마제소바" class="card-image">
+            <div class="card-text">
+              <h3>마제소바</h3>
+              <p>#일식 #다시마식초 #소바</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="japanese" data-latest="2" data-views="10">
+            <img src="img/japanfood-2.jpg" alt="닭고기 유자덮밥" class="card-image">
+            <div class="card-text">
+              <h3>닭고기 유자덮밥</h3>
+              <p>#일식 #유자청 #닭고기</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="japanese" data-latest="2" data-views="40">
+            <img src="img/japanfood-3.jpg" alt="돈까스 김치나베 라면" class="card-image">
+            <div class="card-text">
+              <h3>돈까스 김치나베 라면</h3>
+              <p>#일식 #돈까스 #김치라멘</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="japanese" data-latest="2" data-views="251">
+            <img src="img/japanfood-4.jpg" alt="오야꼬동" class="card-image">
+            <div class="card-text">
+              <h3>오야꼬동</h3>
+              <p>#일식 #덮밥 #차슈</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="japanese" data-latest="2" data-views="254">
+            <img src="img/japanfood-5.jpg" alt="차슈 볶음밥" class="card-image">
+            <div class="card-text">
+              <h3>차슈 볶음밥</h3>
+              <p>#일식 #차슈 #볶음밥</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="japanese" data-latest="2" data-views="257">
+            <img src="img/japanfood-6.jpg" alt="모든만두덮밥" class="card-image">
+            <div class="card-text">
+              <h3>모든만두덮밥</h3>
+              <p>#일식 #만두 #왕초보</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="japanese" data-latest="2" data-views="210">
+            <img src="img/japanfood-7.jpg" alt="비프다타끼 샐러드" class="card-image">
+            <div class="card-text">
+              <h3>비프다타끼 샐러드</h3>
+              <p>#일식 #참나물 #고기</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="japanese" data-latest="2" data-views="240">
+            <img src="img/japanfood-8.jpg" alt="베이컨 유부초밥" class="card-image">
+            <div class="card-text">
+              <h3>베이컨 유부초밥</h3>
+              <p>#일식 #도시락 #초간단요리</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="japanese" data-latest="2" data-views="270">
+            <img src="img/japanfood-9.jpg" alt="만두덮밥" class="card-image">
+            <div class="card-text">
+              <h3>만두덮밥</h3>
+              <p>#일식 #계란 #단짠단짠</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="japanese" data-latest="2" data-views="250">
+            <img src="img/japanfood-10.jpg" alt="돈코츠라면" class="card-image">
+            <div class="card-text">
+              <h3>돈코츠라면</h3>
+              <p>#일식 #짬뽕 #국물요리</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="japanese" data-latest="2" data-views="240">
+            <img src="img/japanfood-11.jpg" alt="차슈덮밥" class="card-image">
+            <div class="card-text">
+              <h3>차슈덮밥</h3>
+              <p>#일식 #삼겹살 #단짠단짠</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="japanese" data-latest="2" data-views="300">
+            <img src="img/japanfood-12.jpg" alt="고구마사과카레" class="card-image">
+            <div class="card-text">
+              <h3>고구마사과카레</h3>
+              <p>#일식 #초간단요리 #새콤달콤</p>
+            </div>
+          </a>
+      
+      
+          <!-- 디저트 -->
+      
+      
+          <a class="card" href="#" data-category="dessert" data-latest="2" data-views="1000">
+            <img src="img/dessert-1.jpg" alt="딸기 오믈렛" class="card-image">
+            <div class="card-text">
+              <h3>딸기 오믈렛</h3>
+              <p>#디저트 #생크림 #딸기</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="dessert" data-latest="2" data-views="40">
+            <img src="img/dessert-2.jpg" alt="고구마사과카레" class="card-image">
+            <div class="card-text">
+              <h3>복숭아 치즈케이크</h3>
+              <p>#디저트 #치즈 #복숭아</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="dessert" data-latest="2" data-views="400">
+            <img src="img/dessert-3.jpg" alt="고구마사과카레" class="card-image">
+            <div class="card-text">
+              <h3>연어 키쉬</h3>
+              <p>#디저트 #연어 #키쉬</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="dessert" data-latest="2" data-views="250">
+            <img src="img/dessert-4.jpg" alt="고구마사과카레" class="card-image">
+            <div class="card-text">
+              <h3>딸기케이크</h3>
+              <p>#디저트 #딸기 #케이크</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="dessert" data-latest="2" data-views="200">
+            <img src="img/dessert-5.jpg" alt="고구마사과카레" class="card-image">
+            <div class="card-text">
+              <h3>한라봉라떼</h3>
+              <p>#디저트 #한라봉 #커피</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="dessert" data-latest="2" data-views="300">
+            <img src="img/dessert-6.jpg" alt="고구마사과카레" class="card-image">
+            <div class="card-text">
+              <h3>한라봉소르베</h3>
+              <p>#디저트 #스무디 #한라봉</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="dessert" data-latest="2" data-views="500">
+            <img src="img/dessert-7.jpg" alt="고구마사과카레" class="card-image">
+            <div class="card-text">
+              <h3>고구마치즈그라탕</h3>
+              <p>#디저트 #고구마 #치즈그라탕</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="dessert" data-latest="2" data-views="400">
+            <img src="img/dessert-8.jpg" alt="고구마사과카레" class="card-image">
+            <div class="card-text">
+              <h3>딸기 복숭아 요거트빙수</h3>
+              <p>#디저트 #과일 #새콤달콤</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="dessert" data-latest="2" data-views="10">
+            <img src="img/dessert-9.jpg" alt="고구마사과카레" class="card-image">
+            <div class="card-text">
+              <h3>막대과자</h3>
+              <p>#디저트 #견과류 #케이크믹스</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="dessert" data-latest="2" data-views="40">
+            <img src="img/dessert-10.jpg" alt="고구마사과카레" class="card-image">
+            <div class="card-text">
+              <h3>고구마맛탕</h3>
+              <p>#디저트 #시럽 #고구마</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="dessert" data-latest="2" data-views="50">
+            <img src="img/dessert-11.jpg" alt="고구마사과카레" class="card-image">
+            <div class="card-text">
+              <h3>초코하드바</h3>
+              <p>#디저트 #아이스크림 #초콜릿</p>
+            </div>
+          </a>
+          <a class="card" href="#" data-category="dessert" data-latest="2" data-views="300">
+            <img src="img/dessert-12.jpg" alt="고구마사과카레" class="card-image">
+            <div class="card-text">
+              <h3>초코아이스크림</h3>
+              <p>#디저트 #초간단요리 #초콜릿</p>
+            </div>
+          </a>
+      
+      
+      
+        </div>
+      
+      
+      
+      
+        <!-- 페이지네이션 -->
+        <div class="pagination">
+          <button id="prevPage" disabled><</button>
+          <!-- <span id="pageInfo">1 / N</span> 현재 페이지 정보 -->
+          <button id="nextPage">></button>
+        </div>
+      
+  
+  
+  
+  
+  
+  
+  <!-- 푸터 -->
+  <footer>
+    <div class="content container-fluid">
+      <div>
+        <a class="foot-first-line" href="#">즐겨찾기</a>
+      </div>
+    </div>
+    <div class="second-content container-fluid">
+      <div class="row">
+        <div class="col footer-left">
+          <div>(주)누나키친</div>
+          <div>html/css 3기 10조</div>
+          <div class="pt-4">Copyright 맹인영 주찬미 박성빈 김종호 이상미</div>
+        </div>
+        <div class="col footer-right">
+          <div>
+            <img src="./logo/noonaa.png" width="100" height="100">
+          </div>
+          <span>
+            <i class="fa-brands fa-twitter share-button"></i>
+            <i class="fa-brands fa-facebook share-button"></i>
+            <i class="fa-brands fa-instagram share-button"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+      
+      
+      
+      </div><!--wrap-->
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("searchForm").addEventListener("submit", function (e) {
+          e.preventDefault(); // 폼 기본 동작(페이지 새로고침) 방지
+      
+          // 입력값 가져오기
+          const query = document.getElementById("searchInput").value.trim();
+      
+          // 키워드에 따라 이동할 URL 설정
+          const pageMap = {
+            "한식": "#한식",
+            "중식": "#중식",
+            "일식": "#일식",
+            "디저트": "#디저트"
+          };
+      
+          // 입력값이 pageMap에 있는지 확인
+          if (pageMap[query]) {
+            window.location.href = pageMap[query]; // 해당 페이지로 이동
+          } else {
+            alert("검색 결과가 없습니다. 다시 입력해주세요.");
+          }
+        });
+      </script>
+           <script src="js/search.js"></script>
+           <script>document.querySelector('.main1-input-area2').addEventListener('keydown', function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();  // 폼 제출 기본 동작 방지
+                document.querySelector('.main1-search-icon').click();  // 검색 아이콘 클릭 트리거
+            }
+        });</script>
+  </body>
+</html>

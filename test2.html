@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/833e1894b1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    .mall-image {
+  width: 100%;
+  height: 405px;
+  background-image: url('./image/maincook.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  align-items: center; 
+  text-align: center;
+}
+.red-bold{
+  color:darkred;
+  font-size: 35px;
+  font-weight: 700;
+}
+.easier-text{
+  font-size: 38px;
+  color: #333;
+  font-weight: 600;
+}
+.btn{
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 48rem){
+  .mall .mall-image{
+    background-size: cover;
+    align-items: center; 
+    text-align: center;
+    height:100%;
+    width:auto;
+  }
+}
+
+
+.content{
+
+    padding: 10px 20px;
+    position: absolute;
+    background: rgba(120, 41, 34, 0.81);
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    margin-bottom: 20px;
+
+
+}
+.second-content{
+  margin: 0 auto;
+  padding: 10px 0;
+  position: relative;
+  background: #AB392F;
+  width: 100%;  
+  display: relative;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  text-align: center;
+
+}
+.foot-first-line{
+  position: relative;
+  margin: 0 0;
+  width: auto;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  white-space: normal; 
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/* .footer{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  bottom:0px;
+} */
+
+
+
+footer{
+    width: 100%;
+    background-color: #AB392F;
+    position: relative;
+    color: #fff;
+    width: 100%;
+    margin-top: 30px;
+}
+.footer-bt{
+
+margin: 0 20px;
+
+    
+}
+.second-line{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 50px 0;
+    bottom: 0;
+
+}
+
+/* .container-fluid{
+  padding-left: 300px;
+  padding-right: 300px;
+} */
+
+
+
+
+.footer-left {
+  padding-top:20px;
+
+}
+.footer-right{
+
+}
+
+.share-button{
+  margin-bottom: 15px;
+
+  font-size: 30px;
+}
+@media screen and (max-width: 48rem){
+  .footer-left .footer-right{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 48rem){
+  .second-content {
+    flex-direction: column; 
+    
+  }
+}
+@media screen and (max-width: 48rem) {
+  .footer {
+    flex-direction: column; 
+    align-items: center; 
+  }
+}
+@media screen and (max-width: 48rem) {
+  .container-fluid {
+    padding-left: 15px; 
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .text-center {
+    font-size: 1.2rem;
+    padding: 5px; 
+    line-height: 1.8;
+  }
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover; 
+}
+
+.star-book{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-color: rgba(120, 41, 34, 0.81);
+}
+
+.star-book:hover {
+  background-color: rgba(120, 41, 34, 0.81);
+  border-color: rgba(120, 41, 34, 0.81);
+}
+.star-book:active {
+  background-color: rgba(120, 41, 34, 0.81);
+  border-color: rgba(120, 41, 34, 0.81);
+}
+.custom-card{
+  border-width: 2px;
+  border-color: #AB392F;
+}
+
+.star-icon {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 1.2rem;
+  color: rgba(120, 41, 34, 0.81);
+  cursor: pointer;
+}
+.star-icon .fa-regular {
+  color: rgba(120, 41, 34, 0.81); 
+}
+.star-icon .fa-solid {
+  display: none; /* 기본적으로 채워진 별은 숨김 */
+  color: rgba(120, 41, 34, 0.81); /* 채워진 별 색상 */
+}
+.star-icon:hover .fa-regular {
+  display: none; /* 비어있는 별 숨김 */
+}
+.star-icon:hover .fa-solid {
+  display: inline-block; /* 채워진 별 표시 */
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class ="mall2 mall-image">
+    <div>
+      <h3 class ="text-center pt-5">
+        <span class ="red-bold">요리를 더 쉽게</span>
+        <br>
+        <strong>누나몰의 각종 소스들로 모든 레시피를 보다</strong>
+        <br>
+        <div class ="easier-text pb-2">쉽게, 빠르게, 맛있게</div>
+        <button type="button" class="btn btn-outline-dark py-7 px-30 mx-20">누나몰가기</button>
+      </h3>
+    </div>
+  </div>
+
+
+  <div class="container-fluid px-0">
+    <h2 class="text-center easier-text mt-4">내 취향 레시피, 별표로 저장해보세요!</h2>
+    <p class="text-center mb-4">좋아하는 레시피를 모아 나만의 요리북을 완성</p>
+    
+    <div class="row gx-3">
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <img src="https://www.okitchen.co.kr/pds/upfile/2020-08-24_427854552%5B18%5D.jpg" class="card-img-top" alt="초콜릿피자">
+          <div class="card-body">
+            <p class="card-text text-center">#냉동피자X초콜릿 #바나나 #단짠단짠</p>
+            <h5 class="card-title text-center">
+              <span class="star-icon">
+                <a href="https://www.daum.net/"><!--로그인 창 링크-->
+                  <i class="fa-regular fa-star"></i><!-- 비어있는 별 -->
+                  <i class="fa-solid fa-star"></i> <!-- 채워진 별 -->
+                </a>
+              </span>
+            초콜릿피자</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <img src="https://www.okitchen.co.kr/pds/upfile/2020-08-25_427865954%5B10%5D.jpg" class="card-img-top" alt="한라산볶음밥">
+          <div class="card-body">
+            <p class="card-text text-center">#볶음밥X라조장 #계란요리 #치즈듬뿍</p>
+            <h5 class="card-title text-center">
+              <span class="star-icon">
+                <a href="#"><!--로그인 창 링크-->
+                  <i class="fa-regular fa-star"></i><!-- 비어있는 별 -->
+                  <i class="fa-solid fa-star"></i> <!-- 채워진 별 -->
+                </a>
+              </span>
+            한라산볶음밥</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <img src="https://www.okitchen.co.kr/pds/upfile/2020-08-24_427853121%5B12%5D.jpg" class="card-img-top" alt="완자꼬치">
+          <div class="card-body">
+            <p class="card-text text-center">#XO만두 #글램만두 #캠핑 #꼬치요리</p>
+            <h5 class="card-title text-center">
+              <span class="star-icon">
+                <a href="#"><!--로그인 창 링크-->
+                  <i class="fa-regular fa-star"></i><!-- 비어있는 별 -->
+                  <i class="fa-solid fa-star"></i> <!-- 채워진 별 -->
+                </a>
+              </span>
+            완자꼬치</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form action="#" method="get">
+    <button class="star-book btn btn-outline-dark d-block mx-auto">나만의 요리북</button>
+  </form>
+  
+  <footer >
+    <div class="footer-bt">
+        <div class="content">
+            <div>
+                <a class="foot-first-line" href="#">즐겨찾기</a>
+            </div>
+        </div><!--content-->
+    
+        <div class="second-content ">
+            <div class="row second-line">
+                <div class="col footer-left">
+                    <div>(주)누나키친</div>
+                    <div>html/css 3기 10조</div>
+                    <div class="pt-4">Copyright 맹인영 주찬미 박성빈 김종호 이상미</div>
+                </div><!--col footer-left-->
+                <div class="col footer-right">
+                    <div>
+                        <img src="./image/noonaa.png" width="100" height="100">
+                    </div>
+                    <span>
+                        <i class="fa-brands fa-twitter share-button"></i>
+                        <i class="fa-brands fa-facebook share-button"></i>
+                        <i class="fa-brands fa-instagram share-button"></i>
+                    </span>
+        
+                </div>
+            </div><!--row-->
+        </div><!--second-content-->
+    </div><!--footer-bt-->
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </script>
+</body>
+</html>
